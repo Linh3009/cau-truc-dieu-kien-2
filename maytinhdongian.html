@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>May tinh don gian</title>
+  <style>
+    body {
+      width: 250px;
+      text-align: center;
+      margin: 10px auto;
+    }
+    table, td, tr{
+      width: 100%;
+      border: 2px black solid;
+    }
+    button{
+      width: 20%;
+      height: 20%;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th><input id="display" style="width: 240px"><br></th>
+  </tr>
+  <tr>
+    <td>
+<button onclick="so(1)">1</button>
+<button onclick="so(2)">2</button>
+<button onclick="so(3)">3</button>
+<button onclick="so('+')">+</button>
+    </td>
+  </tr>
+
+  <tr><td>
+<button onclick="so(4)">4</button>
+<button onclick="so(5)">5</button>
+<button onclick="so(6)">6</button>
+<button onclick="so('-')">-</button>
+  </td>
+  </tr>
+
+  <tr><td>
+<button onclick="so(7)">7</button>
+<button onclick="so(8)">8</button>
+<button onclick="so(9)">9</button>
+<button onclick="so('*')">*</button>
+  </td>
+  </tr>
+
+  <tr><td>
+<button onclick="xoa()">AC</button>
+<button onclick="so(0)">0</button>
+<button onclick="ketQua()">=</button>
+<button onclick="so('/')">/</button>
+  </td></tr>
+
+
+</table>
+</body>
+</html>
+
+<script>
+  function so(number) {
+    document.getElementById("display").value += number;
+  }
+
+  function ketQua() {
+    let pt = document.getElementById("display").value;
+    let ketqua = eval(pt);
+    document.getElementById("display").value = ketqua;
+  }
+
+  function xoa() {
+    let xoa = ""
+    document.getElementById("display").value = xoa
+  }
+</script>
+
+
