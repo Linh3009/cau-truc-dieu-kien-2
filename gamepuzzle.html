@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+</head>
+
+<body>
+<img id="image1" onclick="changeImg1()"
+     src="https://toanthaydinh.com/wp-content/uploads/2020/04/wallpaper-4k-hinh-nen-4k-hinh-anh-ve-ruong-bac-thang-dep_101311157-1400x788-1.jpg"
+     width="400px" height="250px"><br>
+<img id="image2" onclick="changeImg2()"
+     src="https://toanthaydinh.com/wp-content/uploads/2020/04/wallpaper-4k-hinh-nen-4k-hinh-anh-ve-ruong-bac-thang-dep_101311157-1400x788-1.jpg"
+     width="400px" height="250px">
+
+</body>
+</html>
+
+<script>
+
+    let count1 = 1;
+    let count2 = 1;
+    let image1 = document.getElementById("image1");
+    let image2 = document.getElementById("image2");
+
+    function changeImg1() {
+        if (count1 === 1) {
+            count1++;
+            image1.src = "https://mayanhxachtaynhat.com/wp-content/uploads/2021/11/Chup-lai-nhung-khoanh-khac-chan-thuc-879x400.jpg";
+        } else {
+            count1 = 1;
+            image1.src = "https://toanthaydinh.com/wp-content/uploads/2020/04/wallpaper-4k-hinh-nen-4k-hinh-anh-ve-ruong-bac-thang-dep_101311157-1400x788-1.jpg";
+        }
+    }
+
+    function changeImg2() {
+        if (count2 === 1) {
+            count2++;
+            image2.src = "https://mayanhxachtaynhat.com/wp-content/uploads/2021/11/Chup-lai-nhung-khoanh-khac-chan-thuc-879x400.jpg";
+        } else {
+            count2 = 1;
+            image2.src = "https://toanthaydinh.com/wp-content/uploads/2020/04/wallpaper-4k-hinh-nen-4k-hinh-anh-ve-ruong-bac-thang-dep_101311157-1400x788-1.jpg";
+        }
+    }
+
+</script>
+</body>
+</html>
